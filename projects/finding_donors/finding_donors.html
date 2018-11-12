@@ -13159,24 +13159,24 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <p><strong>Answer: </strong></p>
 <p>Random Forest</p>
 <ul>
-<li><strong> Describe one real-world application in industry where the model can be applied </strong> - A aplicação mais famosa é a do Titanic - para a construção de um modelo de sobrevivência.</li>
-<li><strong> What are the strengths of the model; when does it perform well? </strong> - É rápido e capaz de lidar com dados não balanceados</li>
-<li><strong> What are the weaknesses of the model; when does it perform poorly? </strong> - Pode dar overfit quando não está bem calibrado ou para datasets muito pequenos.</li>
-<li><strong> What makes this model a good candidate for the problem, given what you know about the data? </strong> - Como o problema possui as classes desbalanceadas a Random Forest pode ser um bom canditado a resolver esse problema.</li>
+<li><strong> Describe one real-world application in industry where the model can be applied </strong> - The most famous application is the Titanic challenge (<a href="https://www.kaggle.com/c/titanic">https://www.kaggle.com/c/titanic</a>) - that specifies a survival model modelation.</li>
+<li><strong> What are the strengths of the model; when does it perform well? </strong> - It's fast and capable of dealing with unbalanced data.</li>
+<li><strong> What are the weaknesses of the model; when does it perform poorly? </strong> - Can overfit if not well calibrated or with small datasets.</li>
+<li><strong> What makes this model a good candidate for the problem, given what you know about the data? </strong> - Since the problem has unbalanced data the Random Forest can be a good canditate to solve the problem.</li>
 </ul>
 <p>LogisticRegression</p>
 <ul>
-<li><strong> Describe one real-world application in industry where the model can be applied </strong> - Pode ser aplicado para a construção de um modelo de aprovação/rejeição de crédito.</li>
-<li><strong> What are the strengths of the model; when does it perform well? </strong> - Funciona bem para conjuntos pequenos de dados, além disso ele roda bastante rapidamente.</li>
-<li><strong> What are the weaknesses of the model; when does it perform poorly? </strong> - Caso o problema não seja linear o modelo pode ter um resultado bastante abaixo de outros modelos que não tem essa particiularidade. </li>
-<li><strong> What makes this model a good candidate for the problem, given what you know about the data? </strong> - Esse modelo poderia trazer uma solução rápida para o problema, caso ele fosse linear.</li>
+<li><strong> Describe one real-world application in industry where the model can be applied </strong> - Can be applied to build a credit model to automatically reject and approve a loan.</li>
+<li><strong> What are the strengths of the model; when does it perform well? </strong> - Works well for small data, and runs quickly.</li>
+<li><strong> What are the weaknesses of the model; when does it perform poorly? </strong> - If the problem is not linear the model could present a result bellow the other models that does not have this limitation.</li>
+<li><strong> What makes this model a good candidate for the problem, given what you know about the data? </strong> - This model can bring a quick solution to the problem if it is linear.</li>
 </ul>
 <p>AdaBoost</p>
 <ul>
-<li><strong> Describe one real-world application in industry where the model can be applied </strong> - Identificar rostos em uma foto</li>
-<li><strong> What are the strengths of the model; when does it perform well? </strong> - Poucos hiperparametros para fazer tunning e resistente a overfit.</li>
-<li><strong> What are the weaknesses of the model; when does it perform poorly? </strong> - Pode demorar um pouco para rodar com muitos dados.</li>
-<li><strong> What makes this model a good candidate for the problem, given what you know about the data? </strong> - Pode ser um bom modelo para lidar com as classes desbalanceadas sem causar overfit.</li>
+<li><strong> Describe one real-world application in industry where the model can be applied </strong> - Identify faces in a picture.</li>
+<li><strong> What are the strengths of the model; when does it perform well? </strong> - Low hiperparameter tunning and resistance to overfit.</li>
+<li><strong> What are the weaknesses of the model; when does it perform poorly? </strong> - Could take some time to run with a lot of data.</li>
+<li><strong> What makes this model a good candidate for the problem, given what you know about the data? </strong> - Could be a good model to deal with unbalanced classes without overfit.</li>
 </ul>
 
 </div>
@@ -14117,7 +14117,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Apesar dos resultados dos algoritmos Random Forests e AdaBoost serem bastantes semelhantes para o dataset de teste, percebemos que o Adaboost possui um resultado um pouco melhor, além de nçao apresentar o overfit, que pode ser visto nos gráficos com os resultados de acurácia e f-score do conjunto de treinamento. Apesar do tempo de treinamento ser o quase que o dobro da Random Forest, o Adaboost foi mais resistente a overfit e portanto se mostra o melhor algoritmo para a tarefa.</p>
+<p>Besides the results for Random Forest and Adaboost being really similar for the test data, we can realize that Adaboost has a better result, and it does not has the overfit seen in Random Forest, this can be seen at the acuracy and f-score graphs from the training set. Besides the training time being almost two times comparing to the Random Forest, the Adaboost was more resistent to overfit, therefore it seens to be the best algorithm for the task.</p>
 
 </div>
 </div>
@@ -14140,7 +14140,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Adaboost é um modelo que trabalha com um conjunto de modelos. O Adaboost é um tipo de algoritmo de boosting, que trabalha com a teoria que vários modelos especialistas (ou fracos), combinados, obtém bons resultados em cojunto. Para isso o Adaboost utiliza pequenos pedaços do dataset e o treina em um modelo (por exemplo uma árvore de decisão) e depois os combina. Usar o Adaboost é como ter pequenas árvores de decisão para várias partes do seu dataset.</p>
+<p>Adaboost is an ensemble algorithm. It is a boosting algorithm, that works with the teory that various specialist models (or weaks), combined, get better results when together. To achieve this, Adaboost uses little pieces of the dataset and train the model (for exemple, a decision tree) and then combines them. The algorithm is the like having little decision trees with various parts of your dataset.</p>
 
 </div>
 </div>
@@ -14301,7 +14301,7 @@ Final F-score on the testing data: 0.7224
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Os valores de acurácia são bem pouco melhores e os valores de f-score são um pouco piores, comparando o modelo não otimizado com o modelo otimizado. O modelo é muito melhor do que o 'benchmark naive' da pergunta 1, tanto para acurácia, quanto para f-score.</p>
+<p>The acuracy values are just a little bit better from the unoptimized to the optimized model and the f-score values are just a little worse. The model is nuch better than the naive benchmark from question 1, for both acuracy and for f-score.</p>
 
 </div>
 </div>
@@ -14331,7 +14331,7 @@ Final F-score on the testing data: 0.7224
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Eu acredito que as váriaveis mais relevantes são essas:</p>
+<p>I believe that the most relevant variables are:</p>
 <ul>
 <li>education-num</li>
 <li>age</li>
@@ -14339,7 +14339,7 @@ Final F-score on the testing data: 0.7224
 <li>hours-per-week</li>
 <li>capital-gain</li>
 </ul>
-<p>A educação vai dizer o quanto que uma pessoa estudou, e se ela estudou mais, ela tende a ganhar mais salário, a mesma teoria vale para idade, em tese, quanto mais velho você é mais alto será o seu cargo e maior o seu salário. Quanto a <code>workclass</code>, eu acredito que ela seja relevante porque umas profissões são mais bem remuneradas do que outras. A quantidade de horas pode indicar tanto uma pessoa que precisa trabalhar mais para ter renda suficiente, quanto uma pessoa que está trabalhando muito em cargos mais altos. Ela pode ter uma importãncia tanto positiva quanto negativa para o modelo. Já o <code>capital-gain</code> pode ser relevante para mostrar outro tipo de renda da pessoa.</p>
+<p>Knowing how much a person studied (in years) we can have a proxy if the person has a better salary, if the person studied more it tends to win a better salary. The same teory applies to age, so the older you are the higher is your job title and the higher is your salary. Since some professions have better salaries than others I believe that <code>workclass</code> also can be important. The variable <code>hours-per-week</code> can be as weel as good for the positive or the negative prediction - I believe this can be explained by a person that needs to work more for complements the monthly income or someone that has a high job title and has to work a lot. The variable <code>capital-gain</code> can be relevant to show other money income from a person.</p>
 
 </div>
 </div>
@@ -14711,7 +14711,7 @@ AAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Eu cheguei a acertar quatro dos cinco atributos, mas fora de ordem. Acho interessante ter o capital-loss como primeiro atributo, talvez signifique que a importância dele no modelo seja para prever a classe abaixo de 50,000 (um dos atributos que eu não tinha pensado). Acredito que os demais atributos tenham o impacto que eu expliquei na questão 6, contudo com maior ou menor importancia. O maior destaque para mim foi o education-num, que eu achei que teria mais importância do que a idade, e a ordem deste atributo está em diferente do que eu achava.</p>
+<p>I got four of the five attributes right, but with a different order. I think it's really interesant to see <code>capital-loss</code> as the first attribute, perhaps it means that the importance of the attribute in the model is to predict the class bellow 50,000. I believe that the other attributes have the same impact that I said before at question 6, but with higer or lower importance. The highlight goes to <code>education-num</code> that I found it would have more importance than age, and the order of this atribute is really diferent from what I thought.</p>
 
 </div>
 </div>
@@ -14808,7 +14808,7 @@ F-score on testing data: 0.6715
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O modelo com menos dados apresenta piores resultados do que o modelo com todos os dados. A acurácia caiu 2 pontos e o f-score caiu 5 pontos. Como o f-score perdeu 5 pontos eu não alteraria o modelo para utilizar menor quantidade de atributos, pelo menos não apenas estes cinco atributos.</p>
+<p>The model with less data has worse results than te model with all data. The acuracy droped 2 points and the f-score droped 5 points. Since the f-score droped 5 points I wouldn't train the model to less data, at least not using <em>only</em> those 5 atributes.</p>
 
 </div>
 </div>
