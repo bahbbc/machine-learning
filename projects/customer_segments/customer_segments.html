@@ -14390,9 +14390,9 @@ AFCKUKQAAAAsokgBAABYRJECAACwiCIFAABgEUUKAADAov8Po3YY0JqZ6qsAAAAASUVORK5CYII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>First impression is the distribution in the principal diagonal at the matrix. All the variables could be normalized (applying a log to all numbers?) because the major points relies on the begining of the distribution.</p>
-<p>Concerning the 6 variables presented is easier to verify a correlation between Grocery, Milk and Detergents Paper. Grocery and Detergent paper have a stronger correlation than Grocery and Milk, what can be seen in the heatmap. That also happens with Detergent and Milk, possible indicating that those 3 itens normally are goingitogether in the same proportion.</p>
-<p>Speaking of proportion, it's really hard to see a correlation with any iten and Delicatessen. Looking at the averages we can see that this category has the lowest mean among others and it's hard to see anything in the graphs because of it's proportion. Besides the proportion this category also has some possible outliers, that we can infer from the standard deviation presented before.</p>
-<p>Because of the differences among the data, it's hard to confirm the correlation with Fresh and Delicatessen presented in the correlation heatmap (and also possible to see in the graph). And possible, also because of the correlation obtained with Detergent, Milk and Grocery the R squared had a value above 0.5.</p>
+<p>Concerning the 6 variables presented is easier to verify a correlation between Grocery, Milk and Detergents Paper. Grocery and Detergent paper have a stronger correlation than Grocery and Milk, what can be seen in the heatmap. That also happens with Detergent and Milk, possible indicating that those 3 itens normally are going together in the same proportion.</p>
+<p>Speaking of proportion, it's really hard to see a correlation with any item and Delicatessen. Looking at the averages we can see that this category has the lowest mean among others and it's hard to see anything in the graphs because of it's proportion. Besides the proportion, this category also has some possible outliers, that we can infer from the standard deviation presented before.</p>
+<p>Because of the diferences among the data, it's hard to confirm the correlation with Fresh and Delicatessen presented in the correlation heatmap (and also possible to see in the graph). And possible, also because of the correlation obtained with Detergent, Milk and Grocery the R squared had a value above 0.5.</p>
 
 </div>
 </div>
@@ -19999,7 +19999,7 @@ dtype: int64
 <p><strong>Answer:</strong></p>
 <p><strong> Are there any data points considered outliers for more than one feature based on the definition above? </strong> - Yes there are 5 of those.</p>
 <p><strong> Should these data points be removed from the dataset? </strong> - I believe so, because if they are outliers in more than one category, maybe they are some sort of wrong input data.</p>
-<p><strong> If any data points were added to the <code>outliers</code> list to be removed, explain why. </strong> - The datapoints were added to the list because they aren't following the normal distribution from the dataset. This could be a legit registry, but very different from the others, or an error or typo in the data. Anyway, this could make the model to lost generazation power, specially if the distance between points are relevant (as single link, for example).</p>
+<p><strong> If any data points were added to the <code>outliers</code> list to be removed, explain why. </strong> - The datapoints were added to the list because they aren't following the normal distribution from the dataset. This could be a legit registry, but very different from the others, or an error or typo in the data. Anyway, this could make the model to lost generazation power, specially if the distance between points are relevant (as in single link, for example).</p>
 
 </div>
 </div>
@@ -22819,7 +22819,7 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>I think that the point zero fits the cluster perfectly. And at the begining I tough that having a high amount of Detergent could indicate a restaurant (that has lots of dirty plates to wash), but now, looking at the data distribution I believe that in this point they are rather reselling the itens instead of using it. The values of the second cluster possible indicates that this is a small place, because it differs from  point 1, and that's why I tought it was a mini market at the begining.</p>
+<p>I think that the point zero fits the cluster perfectly. And at the begining I tough that having a high amount of Detergent could indicate a restaurant (which has lots of dirty plates to wash) but now, looking at the data distribution, I believe that in this point they are rather reselling the itens instead of using it. The values of the second cluster possible indicates that this is a small place, because it differs from  point 1, and that's why I tought it was a mini market at the begining.</p>
 
 </div>
 </div>
@@ -22859,7 +22859,9 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>To answer this question we should run the A/B test on each cluster, because if we ran it on the whole population we could end up taking wrong conclusions. This could happen because the delay in the delivery will affect the customer diferently.</p>
 <p>If the distributor changes its delivery service to be more frequent (from 5 to 3 days a week) the customers from the Segment 0 will be very pleased, since they have a high demand from Fresh, Frozen and Delicatessen, itens that could perish if not consumed soon. The other cluster only has Milk as a perishable item and perhaps would be less affected.</p>
+<p>With the premise that the groups are independent, you could run both tests at the same time and apply the best modifications for each group.</p>
 
 </div>
 </div>
