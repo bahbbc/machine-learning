@@ -29,6 +29,8 @@ In this section, clearly describe a solution to the problem. The solution should
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
 
+
+
 In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
 
 ### Evaluation Metrics
@@ -38,6 +40,34 @@ In this section, propose at least one evaluation metric that can be used to quan
 
 ### Project Design
 _(approx. 1 page)_
+
+This project will be divided in 5 sections:
+    
+    1 - Exploratory Data Analysis
+    
+    2 - Feature engineering
+    
+    3 - Model Training
+    
+    4 - Model evaluation and comparison
+    
+    5 - Final model selection and comprehension
+    
+#### 1 - Exploratory Data Analysis
+    Since the data isn't explained, we will have to check every feature for distribution analysis and a better undestanding of the problem.
+    This step will gave a better enlightment of what to do on the next step, as well as which features to use. The only information we have by now is that the dataset has some numerical and categorical features.
+    
+#### 2 - Feature engineering
+    In this section we hope to explore some possible relations with features (discovered in section 1), possible applying some normalization (like a log) or some combination (multiplication, division, sum) between features to apply in this step.
+    
+    Besides that we can possible apply PCA for the numerical features, using the PCAs attributes with most variance and the categorical features all togheter.
+    
+    Since the dataset is really big (4.6 Gb in a ziped file) I also plan to use Dask to perform the paralel computing I will need to run the feature engineer of this dataset in my machine.
+    
+    
+    
+    
+    
 
 In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
 
